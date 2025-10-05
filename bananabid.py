@@ -48,8 +48,6 @@ def simulate_match(bot1, bot2, verbose=False, bot1_name="", bot2_name=""):
         elif p2_bid > p1_bid:
             monkey_pos += 1
 
-        if verbose:
-            print(f"Turn {str(turn_no).rjust(3, "0")}: Player 1 ({bot1_name}) bids {str(p1_bid).rjust(3, "0")} and player 2 ({bot2_name}) bids {str(p2_bid).rjust(3, "0")}. The monkey moves to {monkey_pos}")
 
         bids.append([p1_bid, p2_bid])
         turn_no += 1
@@ -149,4 +147,5 @@ if __name__ == "__main__":
             print("Available bots:", ", ".join(get_bots().keys()))
             print("Make sure your bot is a Python (.py) file in the bots folder and has a function called bananabid.")
         case 4:
+
             pass
